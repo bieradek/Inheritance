@@ -17,7 +17,7 @@ public class Animal {
     }
 
     public void eat() {
-
+        System.out.println("Default animal method called");
     }
 
     public void move() {

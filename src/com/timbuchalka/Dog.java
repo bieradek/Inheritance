@@ -17,4 +17,23 @@ public class Dog extends Animal {
         this.teeth = teeth;
         this.coat = coat;
     }
+
+    private void chew() {
+        System.out.println("Method unique to the dog class called");
+    }
+
+    private void walk() {
+        System.out.println("dog.walk() called");
+    }
+
+    private void run() {
+        System.out.println("dog.run() called");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Override method called i.e. chew() instead of default eat()");
+        chew();
+        super.eat(); // calling a default Animal method
+    }
 }
