@@ -8,6 +8,9 @@ public class Main {
 
         Dog dog = new Dog("York", 8, 20, 4, 4, 1, 20, "Long silky");
 
-        dog.eat();
+//        dog.walk();
+        dog.run();
+        System.out.println("*****");
+        dog.runWithSuper();
     }
 }
